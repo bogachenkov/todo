@@ -1,0 +1,18 @@
+.banner {
+
+  display: none;
+
+  @include minq('laptop') {
+    display: block;
+    flex: 1 1 500px;
+    max-width: 500px;
+    text-align: center;
+    margin-right: 130px;
+  }
+
+  h1 {
+    color: white;
+    font-size: 50px;
+    text-shadow: 3px 3px rgba(0,0,0, .1);
+  }
+}

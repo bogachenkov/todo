@@ -1,0 +1,8 @@
+.todoList__list {
+  height: 55%;
+  overflow-y: scroll;
+
+  @include minq('tablet') {
+    height: 53vh;
+  }
+}

@@ -1,0 +1,56 @@
+$breakpoints: (
+        "phone":        25em,
+        "tablet":       48em,
+        "laptop":       64em,
+        "desktop":      90em,
+        "4k":           160em
+);
+
+@mixin minq($width) {
+  $width: map_get($breakpoints, $width);
+  @media screen and (min-width: $width){
+    @content;
+  }
+}
+
+@mixin border-top-rad($radius) {
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
+}
+@mixin border-right-rad($radius) {
+  border-top-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+}
+@mixin border-bottom-rad($radius) {
+  border-bottom-left-radius: $radius;
+  border-bottom-right-radius: $radius;
+}
+@mixin border-left-rad($radius) {
+  border-top-left-radius: $radius;
+  border-bottom-left-radius: $radius;
+}
+
+@mixin margin-center() {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin box-shadow($shadow...) {
+  -moz-box-shadow: $shadow;
+  -webkit-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+@mixin font($weight:500, $size:1rem, $line-heifght: 1em, $family: $font-family, $color:inherit, $transform:none) {
+  font: $weight #{$size}/#{$line-height $family};
+  color: $color;
+  text-transform: $transform;
+}
+
+@mixin position($position:relative, $coords: null null null null) {
+  position: $position;
+  top: nth($coords, 1);
+  right: nth($coords, 2);
+  bottom: nth($coords, 3);
+  left: nth($coords, 4);
+}

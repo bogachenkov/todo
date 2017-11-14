@@ -1,0 +1,9 @@
+@import "date__current";
+@import "date__weekday";
+
+.date {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+

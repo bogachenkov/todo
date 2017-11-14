@@ -1,0 +1,19 @@
+.filters {
+  text-align: center;
+
+  &__item {
+    margin: 15px 10px;
+    display: inline-block;
+    cursor: pointer;
+    color: #999999;
+
+    &-active {
+      color: rgb(255,145,0);
+    }
+
+    i {
+      font-size: 32px;
+
+    }
+  }
+}

@@ -1,0 +1,115 @@
+.todoList__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 15px; }
+  .todoList__item-disabled {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.3); }
+    .todoList__item-disabled i {
+      color: rgba(0, 0, 0, 0.2); }
+    .todoList__item-disabled:hover {
+      background-color: rgba(235, 214, 69, 0.05) !important; }
+  .todoList__item:hover {
+    background-color: rgba(235, 214, 69, 0.1); }
+
+.todoList__check {
+  margin-right: 15px;
+  max-width: 50px;
+  display: inline-block; }
+
+.todoList__left {
+  display: flex;
+  align-items: center; }
+
+.todoList__list {
+  height: 55%;
+  overflow-y: scroll; }
+  @media screen and (min-width: 48em) {
+    .todoList__list {
+      height: 53vh; } }
+
+.todolist__empty {
+  text-align: center;
+  margin-top: 30px; }
+
+.todoList {
+  width: 100%;
+  height: 100vh;
+  flex: 1 1 480px;
+  background-color: white; }
+  @media screen and (min-width: 48em) {
+    .todoList {
+      max-width: 480px;
+      height: auto;
+      box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2); } }
+
+.addTodoForm {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  justify-content: space-around; }
+
+.filters {
+  text-align: center; }
+  .filters__item {
+    margin: 15px 10px;
+    display: inline-block;
+    cursor: pointer;
+    color: #999999; }
+    .filters__item-active {
+      color: #ff9100; }
+    .filters__item i {
+      font-size: 32px; }
+
+.app {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.banner {
+  display: none; }
+  @media screen and (min-width: 64em) {
+    .banner {
+      display: block;
+      flex: 1 1 500px;
+      max-width: 500px;
+      text-align: center;
+      margin-right: 130px; } }
+  .banner h1 {
+    color: white;
+    font-size: 50px;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.1); }
+
+.date__current {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center; }
+
+.date__weekday {
+  font-size: 18px;
+  font-weight: 400; }
+
+.date {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.header {
+  padding: 15px; }
+
+body {
+  background-color: #ff9100;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  padding: 0 15px; }
+
+* {
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,22 @@
+.todoList__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 15px;
+
+  &-disabled {
+    text-decoration: line-through;
+    color: rgba(0,0,0, .3);
+    i {
+      color: rgba(0,0,0, .2);
+    }
+
+    &:hover {
+      background-color: rgba(235,214,69, .05) !important;
+    }
+  }
+
+  &:hover {
+    background-color: rgba(235,214,69, .1);
+  }
+}

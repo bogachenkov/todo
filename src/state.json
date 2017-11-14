@@ -1,0 +1,35 @@
+{
+  "todos" : [
+    {
+      "id": 1,
+      "title": "Test 1",
+      "isCompleted": false,
+      "date" : "13 ноября 2017"
+    },
+    {
+      "id": 2,
+      "title": "Test 2",
+      "isCompleted": false,
+      "date" : "14 ноября 2017"
+    },
+    {
+      "id": 3,
+      "title": "Test 3",
+      "isCompleted": false,
+      "date" : "15 ноября 2017"
+    },
+    {
+      "id": 4,
+      "title": "Test 4",
+      "isCompleted": false,
+      "date" : "16 ноября 2017"
+    },
+    {
+      "id": 5,
+      "title": "Test 5",
+      "isCompleted": false,
+      "date" : "17 ноября 2017"
+    }
+  ],
+  "filter" : "ALL"
+}
